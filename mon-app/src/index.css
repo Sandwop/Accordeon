@@ -19,13 +19,19 @@
   transform: translate(-50%, -50%);
   background: white;
   border-radius: 40px;
-  overflow: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 
 .column{
-  width: 40%;
+  width: 50%;
   background: yellow;
+}
+
+.imgWoman{
+  height: auto;
+  width: 100%;
+  transform: translateX(-50px);
 }
