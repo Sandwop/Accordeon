@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app{
@@ -18,20 +21,77 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  border-radius: 40px;
+  border-radius: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  gap: 6%;
 }
 
 .column{
-  width: 50%;
-  background: yellow;
+  width: 45%;
+}
+
+.colLeft{
+  padding: 30px 0;
 }
 
 .imgWoman{
   height: auto;
   width: 100%;
   transform: translateX(-50px);
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  padding: 20px 0;
+  border-bottom: solid 1px #c7c7c7;
+  position: relative;
+  transition: all ease 300ms;
+}
+
+p{
+  opacity: 0;
+  transition: all ease 300ms;
+  font-size: 0px;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all ease 500ms;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: #da8772;
+}
+
+.active{
+  transform: rotate(180deg);
+}
+
+li:has(.active) p{
+  opacity: 1;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+li:has(.active) h3{
+  font-weight: bolder;
+}
+
+h3{
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 300ms ease;
+}
+
+h1{
+  margin-bottom: 20px;
 }
