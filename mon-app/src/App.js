@@ -1,5 +1,6 @@
 import Item from './Components/Item';
 import woman from './img/woman.svg';
+import imgBackground from './img/img-background.svg';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <div className="container">
         <div className="column colLeft">
           <img className='imgWoman' src={woman} />
+          <img className='imgBackground' src={imgBackground} />
         </div>
         <div className="column colRight">
           <h1>FAQ</h1>
