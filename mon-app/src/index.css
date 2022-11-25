@@ -105,17 +105,17 @@ button{
   color: #da8772;
 }
 
-.active{
+.active button{
   transform: rotate(180deg);
 }
 
-li:has(.active) p{
+li.active p{
   opacity: 1;
   font-size: 14px;
   padding-top: 10px;
 }
 
-li:has(.active) h3{
+li.active h3{
   font-weight: bolder;
 }
 

@@ -5,17 +5,17 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Item = (props) => {
 
-    const [isActive, setIsActive] = useState(false);
+    const [liActive, setLiActive] = useState(false);
 
     const handleClick = event => {
-        setIsActive(current => !current);
+        setLiActive(current => !current);
       };
 
     return (
-        <li>
+        <li className={liActive ? 'active' : ''}>
             <h3>{props.question}</h3>
             <p>{props.content}</p>
-            <button className={isActive ? 'active' : ''} onClick={handleClick}><FontAwesomeIcon icon={faChevronDown} /></button>
+            <button onClick={handleClick}><FontAwesomeIcon icon={faChevronDown} /></button>
         </li>
     );
 };
