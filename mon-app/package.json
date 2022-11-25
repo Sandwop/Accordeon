@@ -1,7 +1,7 @@
 {
   "name": "mon-app",
   "version": "0.1.0",
-  "homepage": "https://stanjacob.fr/react",
+  "homepage": "https://sandwop.github.io/react-accordeon",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
